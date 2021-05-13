@@ -29,12 +29,14 @@ if (!isset($_SESSION['user_login'])) {
     <nav class="navbar navbar-light" style="background-color: #0b1627;">
     
     <a class="navbar-brand" href="index.php"><i class="fas fa-chalkboard-teacher"></i></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
-    <?php $showuser = $_SESSION['user_login']; $haha = mysqli_query($dbconfig,"SELECT * FROM `usuarios` WHERE `username`='$showuser';"); $showrow=mysqli_fetch_array($haha); ?>
+    <?php $showuser = $_SESSION['user_login']; $haha = mysqli_query($dbconfig,"SELECT * FROM `admin` WHERE `username`='$showuser';"); 
+    $showrow=mysqli_fetch_array($haha); ?>
     
 <ul class="nav navbar-nav ">
       <li class="nav-item"><i class="fas fa-address-card"> Bienvenido/a <?php echo $showrow['nombre']; ?>!</a></li>
@@ -52,8 +54,8 @@ if (!isset($_SESSION['user_login'])) {
                <i class="fas fa-chart-bar"></i> Estadisticas
               </a>
 
-              <a href="index.php?page=estudiantes" class="list-group-item list-group-item-action">
-		<i class="fas fa-user-graduate"></i> Estudiantes</a>
+              <a href="index.php?page=alumnos" class="list-group-item list-group-item-action">
+		<i class="fas fa-user-graduate"></i> Alumnos</a>
 
               <a href="index.php?page=usuarios" class="list-group-item list-group-item-action">
 		<i class="fa fa-users"></i> Usuarios</a>
