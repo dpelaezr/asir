@@ -9,6 +9,35 @@
             $password = $_POST['password'];
 
             $input_arr = array();
+
+            if (empty ($username)) {
+              $input_arr['input_user_error']="Se requiere nombre de usuario.";
+            }
+
+            if (empty($password)){
+              $input_arr['input_pass_error']="Introduce la contraseña.";
+            }
+
+
+            if (count($input_arr)==0) {
+              $query = "SELECT * FROM `admin` WHERE `username`= '$username';";
+              $result = mysqli_query($dbconfig, $query);
+              if (mysqli_num_rows($result)==1){
+                $row = mysqli_fetch_assoc($result);
+                if ($row['password']==sha1(md5($password))) {
+                  if ($row ['estado']=='activo') {
+                    $_SESSION['user_login']=$username;
+                    header('Location: index.php');
+              }else {
+                  $status_inactive = "Tu estado es inactivo, ponte en contacto con el administrador";
+              }
+              }else{
+                $wrongpass="La contraseña es erronea!";
+              }
+            }else {
+              $nick = "Usuario incorrecto!";
+            }
+          }
         }
 ?>
 

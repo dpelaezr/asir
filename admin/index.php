@@ -16,12 +16,13 @@ if (!isset($_SESSION['user_login'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
         <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="../css/fontawesome.min.css">
-    <link rel="stylesheet" href="../css/solid.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" href="../css/card.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        
     </head>
 
     <body>
@@ -51,14 +52,29 @@ if (!isset($_SESSION['user_login'])) {
           <div class="col-md-3">
             <div class="list-group">
               <a href="index.php?page=card" class="list-group-item list-group-item-action active">
-               <i class="fas fa-chart-bar"></i> Estadisticas
+               <i class="fas fa-chart-bar"></i> Inicio
               </a>
 
-              <a href="index.php?page=alumnos" class="list-group-item list-group-item-action">
+        <a href="index.php?page=alumnos" class="list-group-item list-group-item-action">
 		<i class="fas fa-user-graduate"></i> Alumnos</a>
 
-              <a href="index.php?page=usuarios" class="list-group-item list-group-item-action">
-		<i class="fa fa-users"></i> Usuarios</a>
+        <a href="index.php?page=añadir" class="list-group-item list-group-item-action">
+		<i class="fas fa-user-graduate"></i> Agregar Alumno</a>
+
+        <a href="index.php?page=profesores" class="list-group-item list-group-item-action">
+		<i class="fas fa-user-graduate"></i> Porfesores</a>
+
+        <a href="index.php?page=añadirprof" class="list-group-item list-group-item-action">
+		<i class="fas fa-user-graduate"></i> Agregar Profesor</a>
+
+        <a href="index.php?page=asignaturas" class="list-group-item list-group-item-action">
+		<i class="fas fa-user-graduate"></i> Asignaturas</a>
+
+        <a href="index.php?page=añadirprof" class="list-group-item list-group-item-action">
+		<i class="fas fa-user-graduate"></i> Agregar Asignatura</a>
+
+        <a href="index.php?page=usuarios" class="list-group-item list-group-item-action">
+		<i class="fa fa-users"></i> Administradores</a>
               
 	     <a href="index.php?page=perfiluser" class="list-group-item list-group-item-action">
 		<i class="fa fa-user"></i> Perfil</a>
