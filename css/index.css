@@ -1,0 +1,153 @@
+.list-group{
+    padding: 10px;
+}
+.fas {
+    color: #071838;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+span {
+    color: black;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: Merriweather;
+}
+h5{
+    font-family: Merriweather;
+    text-align: center;
+}
+.letras {
+    color:black;
+    font-family: Merriweather;
+    font-size: 12px;
+}
+
+/* card.php */
+
+.titulo{
+    color: black;
+    font-size: 30px;
+    font-family: Gayathri;
+    font-weight: bold;
+}
+
+.nombre {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Merriweather;
+}
+
+.dir{
+    color: #020f03;
+    font-family: Roboto Mono;
+    font-weight: bold;
+}
+.far{
+    font-size: 23px;
+}
+
+.infor {
+    font-size: 20px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/* alumnos.php */
+
+.principal{
+    font-size: 30px;
+    font-family: Gayathri;
+    font-weight: bold;
+}
+
+.inf {
+    color: black;
+    font-family: Roboto Mono;
+}
+
+.inf2 {
+    color: rgb(117, 117, 117);
+    font-family: Roboto Mono;
+}
+
+.table {
+    background-color: rgb(244, 255, 235);
+}
+
+th {
+    font-size: 17px;
+    font-family: Asap, Handlee, M PLUS Rounded;
+}
+
+td {
+    font-size: 17px;
+    font-family: Asap, Handlee, M PLUS Rounded;
+}
+
+/* añadir.php */
+
+label {
+    font-size: 15px;
+    font-family: Merriweather;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.form-control {
+    font-size: 14px;
+    font-family: Merriweather;
+}
+
+.boton {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.boton2 {
+    background-color: rgb(163, 206, 196);
+    border-radius: 10px;
+    font-family: Roboto Mono;
+}
+
+/* perfiluser.php */
+
+.botonperfil {
+    background-color: rgb(163, 206, 196);
+    font-family: Roboto Mono;
+    color: black;
+    padding: 8px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.infperf{
+    font-weight: bold;
+}
+
+.profile{
+    font-size: 21px;
+    font-weight: bold;
+    font-family: Roboto Mono;
+}
+
+input {
+    padding: 10px;
+}
+
+.photo {
+    font-size: 15px;
+    font-family: Asap, Handlee, M PLUS Rounded;
+}
+
+.botonfoto {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(163, 206, 196);
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: Roboto Mono;
+}

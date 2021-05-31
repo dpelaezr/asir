@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 13-05-2021 a las 06:48:37
+-- Tiempo de generación: 28-05-2021 a las 12:31:17
 -- Versión del servidor: 5.7.24
 -- Versión de PHP: 7.4.1
 
@@ -36,15 +36,45 @@ CREATE TABLE `admin` (
   `apellidos` varchar(100) NOT NULL,
   `img` varchar(50) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `estado` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `admin`
 --
 
-INSERT INTO `admin` (`id`, `username`, `password`, `email`, `nombre`, `apellidos`, `img`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'admin', 'admin@gmail.com', 'Administrador', 'Gestor', '', NULL, NULL);
+INSERT INTO `admin` (`id`, `username`, `password`, `email`, `nombre`, `apellidos`, `img`, `created_at`, `updated_at`, `estado`) VALUES
+(1, 'alex', '90b9aa7e25f80cf4f64e990b78a9fc5ebd6cecad', 'alex@gmail.com', 'Alex', 'Bueno', 'alex22-05-21-05-2021alm4.png', NULL, NULL, 'activo');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `alumnos`
+--
+
+CREATE TABLE `alumnos` (
+  `dni` varchar(9) NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `apellidos` varchar(100) NOT NULL,
+  `aciclo` varchar(1) NOT NULL,
+  `ciudad` varchar(25) NOT NULL,
+  `telefono` varchar(9) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `img` varchar(50) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `alumnos`
+--
+
+INSERT INTO `alumnos` (`dni`, `nombre`, `apellidos`, `aciclo`, `ciudad`, `telefono`, `email`, `img`, `created_at`, `updated_at`) VALUES
+('111111111', 'Irina', 'Kilichenko', '1', 'Tenerife', '678567780', 'irina@gmail.com', '1111111112021-05-28-05-49.png', NULL, NULL),
+('222222222', 'Paula', 'Piero', '2', 'Alicante', '645009189', 'paula@gmail.com', '2222222222021-05-28-05-46.png', NULL, NULL),
+('333333333', 'Bruno', 'Zambrano', '2', 'Burgos', '654779908', 'bruno@gmail.com', '3333333332021-05-28-05-49.png', NULL, NULL),
+('444444444', 'Ander', 'Campano', '1', 'Sevilla', '690092314', 'ander@gmail.com', '4444444442021-05-28-05-21.png', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -66,33 +96,9 @@ CREATE TABLE `asignaturas` (
 --
 
 INSERT INTO `asignaturas` (`id`, `nombre_asig`, `dni_prof`, `aciclo`, `created_at`, `updated_at`) VALUES
-(1, 'Horas Libres de Configuración', '112233445', '2', NULL, NULL);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `estudiantes`
---
-
-CREATE TABLE `estudiantes` (
-  `dni` varchar(9) NOT NULL,
-  `nombre` varchar(100) NOT NULL,
-  `apellidos` varchar(100) NOT NULL,
-  `aciclo` varchar(1) NOT NULL,
-  `ciudad` varchar(25) NOT NULL,
-  `telefono` varchar(9) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `img` varchar(50) NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `estudiantes`
---
-
-INSERT INTO `estudiantes` (`dni`, `nombre`, `apellidos`, `aciclo`, `ciudad`, `telefono`, `email`, `img`, `created_at`, `updated_at`) VALUES
-('111111111', 'Olivia', 'Fuentes', '1', 'Vera', '632124698', 'olivia@gmail.com', '', NULL, NULL);
+(1, 'Seguridad y Alta Disponibilidad', '112233445', '1', NULL, NULL),
+(2, 'Servicios de Red e Internet', '334523180', '1', NULL, NULL),
+(3, 'Sistemas Operativos', '223344123', '1', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -118,7 +124,9 @@ CREATE TABLE `profesores` (
 --
 
 INSERT INTO `profesores` (`dni`, `nombre`, `apellidos`, `asignatura`, `ciudad`, `telefono`, `email`, `img`, `created_at`, `updated_at`) VALUES
-('112233445', 'Francisco', 'Rosales', 'Sistemas Operativos', 'Carboneras', '609125679', 'fran@gmail.com', '', NULL, NULL);
+('112233445', 'Alberto', 'Jimenez', 'Seguridad y Alta Disponibilidad', 'Elche', '654231109', 'alberto@gmail.com', '1122334452021-05-28-05-25.png', NULL, NULL),
+('223344123', 'Cristina', 'Perez', 'Sistemas Operativos', 'Valencia', '687002612', 'cristina@gmail.com', '2233441232021-05-28-05-58.png', NULL, NULL),
+('334523180', 'Mercedes', 'Ruiz', 'Servicios de Red e Internet', 'Barcelona', '623986656', 'mercedes@gmail.com', '3345231802021-05-28-05-55.png', NULL, NULL);
 
 --
 -- Índices para tablas volcadas
@@ -131,17 +139,17 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `alumnos`
+--
+ALTER TABLE `alumnos`
+  ADD PRIMARY KEY (`dni`);
+
+--
 -- Indices de la tabla `asignaturas`
 --
 ALTER TABLE `asignaturas`
   ADD PRIMARY KEY (`id`),
   ADD KEY `asignaturas_dniprof_foreign` (`dni_prof`) USING BTREE;
-
---
--- Indices de la tabla `estudiantes`
---
-ALTER TABLE `estudiantes`
-  ADD PRIMARY KEY (`dni`);
 
 --
 -- Indices de la tabla `profesores`
@@ -163,7 +171,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT de la tabla `asignaturas`
 --
 ALTER TABLE `asignaturas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Restricciones para tablas volcadas
