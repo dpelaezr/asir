@@ -24,12 +24,11 @@
               $result = mysqli_query($dbconfig, $query);
               if (mysqli_num_rows($result)==1){
                 $row = mysqli_fetch_assoc($result);
-                if ($row['password']==sha1(md5($password))) {
                   if ($row ['estado']=='activo') {
                     $_SESSION['user_login']=$username;
                     header('Location: index.php');
               }else {
-                  $status_inactive = "Tu estado es inactivo, ponte en contacto con el administrador";
+                  $status_inactive = "Tu estado es inactivo, ponte en contacto con el Administrador";
               }
               }else{
                 $wrongpass="La contraseña es erronea!";
@@ -38,7 +37,7 @@
               $nick = "Usuario incorrecto!";
             }
           }
-        }
+        
 ?>
 
 <!doctype html>
@@ -61,6 +60,7 @@
     <div class="caja">
           <h1 class="text-center">Acceso al Sistema <br>de Información "Ralts"</h1>
           <div class="d-flex justify-content-center">
+          <img src="./fondo/ralts.png" alt="">
           	<?php if(isset($nick)){ ?> <div role="alert" aria-live="assertive" aria-atomic="true" align="center" 
               class="toast alert alert-danger fade hide" data-delay="2000"><?php echo $nick; ?></div><?php };?>
           		

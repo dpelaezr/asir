@@ -27,9 +27,13 @@ $user=  $_SESSION['user_login'];
 <div class="row">
   <div class="col-sm-6">
     <table class="table table-bordered">
+    <tr>
+        <td class="infperf">Username</td>
+        <td><?php echo ucwords($row['username']); ?></td>
+      </tr>
       <tr>
-        <td class="infperf">ID Administrador</td>
-        <td><?php echo $row['id']; ?></td>
+        <td class="infperf">Email</td>
+        <td><?php echo $row['email']; ?></td>
       </tr>
       <tr>
         <td class="infperf">Nombre</td>
@@ -40,19 +44,11 @@ $user=  $_SESSION['user_login'];
         <td><?php echo ucwords($row['apellidos']); ?></td>
       </tr>
       <tr>
-        <td class="infperf">Email</td>
-        <td><?php echo $row['email']; ?></td>
-      </tr>
-      <tr>
-        <td class="infperf">Username</td>
-        <td><?php echo ucwords($row['username']); ?></td>
-      </tr>
-      <tr>
         <td class="infperf">Estado</td>
         <td><?php echo ucwords($row['estado']); ?></td>
       </tr>
     </table>
-    <a class="botonperfil" href="index.php?page=editaruser&id=<?php echo base64_encode($row['id']); ?>">Editar</a>
+    <a class="botonperfil" href="index.php?page=editaruser&username=<?php echo base64_encode($row['username']); ?>">Editar</a>
   </div>
 
   <div class="col-sm-6">

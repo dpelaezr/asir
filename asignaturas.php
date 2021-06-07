@@ -26,31 +26,6 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
-    <div class="toast-body">
-      <?php 
-
-      if (isset($_GET['delete'])) {
-          if ($_GET['delete']=='success') {
-            echo "<p style='color: green; font-weight: bold;'>Asignatura eliminada!</p>";
-          }  
-        }
-        if (isset($_GET['delete'])) {
-          if ($_GET['delete']=='error') {
-            echo "<p style='color: red'; font-weight: bold;>Profesor no eliminado.</p>";
-          }  
-        }
-        if (isset($_GET['edit'])) {
-          if ($_GET['edit']=='success') {
-            echo "<p style='color: green; font-weight: bold; '>Profesor actualizado!</p>";
-          }  
-        }
-        if (isset($_GET['edit'])) {
-          if ($_GET['edit']=='error') {
-            echo "<p style='color: red; font-weight: bold;'>Actualización erronea.</p>";
-          }  
-        }
-      ?>
-    </div>
   </div>
 
 <?php } ?>
@@ -67,7 +42,7 @@
   <tbody>
 
         <?php 
-      $query=mysqli_query($dbconfig,'SELECT * FROM `asignaturas` ORDER BY `asignaturas`.`id` DESC;');
+      $query=mysqli_query($dbconfig,'SELECT * FROM `asignaturas` ORDER BY `asignaturas`.`id`;');
       $i=1;
       while ($result = mysqli_fetch_array($query)) { 
     ?>
@@ -82,7 +57,7 @@
             <a class="btn btn-xs" href="index.php?page=editarasig&id='.base64_encode($result['id']).'&photo=">
               <i class="fa fa-edit"></i></a>
 
-             &nbsp; <a class="btn btn-xs" onclick="javascript:confirmationDelete($(this));return false;" href="index.php?page=eliminarasig&id='.base64_encode($result['id']).'&img=">
+             &nbsp; <a class="btn btn-xs" "href="index.php?page=eliminarasig&id='.base64_encode($result['id']).'&img=">
              <i class="fa fa-trash-alt"></i></a></td>';
         ?>
       </tr>  
@@ -90,11 +65,3 @@
      <?php $i++;} ?>
  </tbody>
 </table>
-<script type="text/javascript">
-  function confirmationDelete(anchor)
-{
-   var conf = confirm('¿Quieres eliminarlo?');
-   if(conf)
-      window.location=anchor.attr("href");
-}
-</script>

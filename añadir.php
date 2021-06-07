@@ -25,10 +25,9 @@ if (isset($_POST['añadir'])) {
     VALUES ('$dni', '$nombre', '$apellidos', '$aciclo', '$ciudad', '$telefono', '$email', '$img');";
 
     if (mysqli_query($dbconfig, $query)) {
-        $insertdato['insertsuccess'] = '<p style="color: green;">Alumno agregado!</p>';
         move_uploaded_file($_FILES['img']['tmp_name'], 'img/'.$img);
     }else{
-        $insertdato['inserterror']= '<p style="color: red;">Rellena los campos requeridos!</p>';
+        $datainsert['inserterror']= '<p></p>';
     }
 }
 
@@ -45,7 +44,7 @@ if (isset($_POST['añadir'])) {
 <div class="row">
 	
 <div class="col-sm-6">
-		<?php if (isset($insertdato)) {?>
+		<?php if (isset($datainsert)) {?>
 	<div role="alert" aria-live="assertive" aria-atomic="true" class="toast fade" data-autohide="true" data-animation="true" data-delay="2000">
 	  <div class="toast-header">
 	    <strong class="mr-auto">Agregar Alumno</strong>
@@ -56,11 +55,11 @@ if (isset($_POST['añadir'])) {
 	  </div>
 	  <div class="toast-body">
 	    <?php 
-	    	if (isset($insertdato['insertsucess'])) {
-	    		echo $insertdato['insertsucess'];
+	    	if (isset($datainsert['insertsucess'])) {
+	    		echo $datainsert['insertsucess'];
 	    	}
-	    	if (isset($insertdato['inserterror'])) {
-	    		echo $insertdato['inserterror'];
+	    	if (isset($datainsert['inserterror'])) {
+	    		echo $datainsert['inserterror'];
 	    	}
 	    ?>
 	  </div>

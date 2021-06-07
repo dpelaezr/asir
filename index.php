@@ -98,6 +98,7 @@ if (!isset($_SESSION['user_login'])) {
         </div>
         </div>  
     </div>
+    
     <div class="clearfix"></div>
     <footer>
       <div class="container">

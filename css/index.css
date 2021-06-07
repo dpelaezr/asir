@@ -1,59 +1,149 @@
-.list-group{
-    padding: 10px;
+/* index.php */
+@media (min-width: 0px) and (max-width: 770px){
+    .list-group{
+        padding: 10px;
+    }
+    .fas {
+        color: #071838;
+        font-size: 7vw;
+        letter-spacing: 5px;
+    }
+    span {
+        color: black;
+        letter-spacing: 1px;
+        font-size: 4vw;
+        font-family: Merriweather;
+    }
+    h5{
+        font-family: Merriweather;
+        text-align: center;
+    }
+    .letras {
+        color:black;
+        font-family: Merriweather;
+        font-size: 12px;
+    }
 }
-.fas {
-    color: #071838;
-    font-size: 25px;
-    letter-spacing: 5px;
+
+@media (min-width: 771px)
+{
+    .list-group{
+        padding: 10px;
+    }
+    .fas {
+        color: #071838;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+    span {
+        color: black;
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-family: Merriweather;
+    }
+    h5{
+        font-family: Merriweather;
+        text-align: center;
+    }
+    .letras {
+        color:black;
+        font-family: Merriweather;
+        font-size: 12px;
+    }
 }
-span {
-    color: black;
-    letter-spacing: 1px;
-    font-size: 15px;
-    font-family: Merriweather;
-}
-h5{
-    font-family: Merriweather;
-    text-align: center;
-}
-.letras {
-    color:black;
-    font-family: Merriweather;
-    font-size: 12px;
-}
+
 
 /* card.php */
 
-.titulo{
-    color: black;
-    font-size: 30px;
-    font-family: Gayathri;
-    font-weight: bold;
+@media (min-width: 0px) and (max-width: 770px){
+    .titulo{
+        color: black;
+        font-size: 5vw;
+        font-family: Gayathri;
+        font-weight: bold;
+    }
+    
+    .card {
+        width: 300px;
+        height: auto;
+    }
+
+    .nombre {
+        color: black;
+        font-size: 4vw;
+        font-weight: bold;
+        font-family: Merriweather;
+    }
+    
+    .dir{
+        color: #020f03;
+        font-family: Roboto Mono;
+        font-weight: bold;
+        font-size: 4.3vw;
+        text-align: center;
+    }
+
+    .fa-arrow-right{
+        font-size: 4vw;
+    }
+
+    .far{
+        font-size: 5vw;
+    }
+
+    .col-sm-4{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+    
+    .col-sm-8 {
+        text-align: center;
+        
+    }
+
+    .infor {
+        font-size: 4vw;
+    }
+    
+    a:link, a:visited, a:active {
+        text-decoration:none;
+    }
 }
 
-.nombre {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: Merriweather;
+@media (min-width: 771px){
+    .titulo{
+        color: black;
+        font-size: 30px;
+        font-family: Gayathri;
+        font-weight: bold;
+    }
+    
+    .nombre {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Merriweather;
+    }
+    
+    .dir{
+        color: #020f03;
+        font-family: Roboto Mono;
+        font-weight: bold;
+    }
+    .far{
+        font-size: 23px;
+    }
+    
+    .infor {
+        font-size: 20px;
+    }
+    
+    a:link, a:visited, a:active {
+        text-decoration:none;
+    }
 }
 
-.dir{
-    color: #020f03;
-    font-family: Roboto Mono;
-    font-weight: bold;
-}
-.far{
-    font-size: 23px;
-}
-
-.infor {
-    font-size: 20px;
-}
-
-a:link, a:visited, a:active {
-    text-decoration:none;
-}
 
 /* alumnos.php */
 

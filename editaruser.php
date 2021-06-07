@@ -8,18 +8,19 @@
      }
     }
     
-    $id = base64_decode($_GET['id']);
+    $nombreuser = base64_decode($_GET['username']);
+
   if (isset($_POST['userupdate'])) {
 	$email = $_POST['email'];
   	$nombre = $_POST['nombre'];
 	$apellidos = $_POST['apellidos'];
 
-  	$query = "UPDATE `admin` SET `email`='$email', `nombre`='$nombre', `apellidos`='$apellidos' WHERE `id`= $id";
+  	$query = "UPDATE `admin` SET `email`='$email', `nombre`='$nombre', `apellidos`='$apellidos' WHERE `username`= $nombreuser";
   	if (mysqli_query($dbconfig,$query)) {
-  		$insertinto['insertsucess'] = '<p style="color: green;">Perfil Actualizado!</p>';
-  		header('Location: index.php?page=perfiluser&edit=success');
+  		$datainsert['insertsucess'] = '<p></p>';
+  		/*header('Location: index.php?page=perfiluser&edit=success'); */
   	}else{
-  		header('Location: index.php?page=perfiluser&edit=error');
+  		 header('Location: index.php?page=perfiluser&edit=error'); 
   	}
   }
 ?>
@@ -28,15 +29,14 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
      <li class="breadcrumb-item" aria-current="page"><a href="index.php"><span class="inf">Información</span> </a></li>
-     <li class="breadcrumb-item" aria-current="page"><a href="index.php?page=perfiluser"><span class="inf2">Perfil</span> </a></li>
+     <li class="breadcrumb-item" aria-current="page"><a href="index.php?page=perfiluser"><span class="inf">Perfil</span> </a></li>
      <li class="breadcrumb-item active" aria-current="page"><span class="inf2">Editar Perfil</span></li>
   </ol>
 </nav>
 
 <?php
-		if (isset($id)) {
-
-			$query = "SELECT  `email`, `nombre`, `apellidos` FROM `admin` WHERE `id`=$id;";
+		if (isset($nombreuser)) {
+			$query = "SELECT  `email`, `nombre`, `apellidos` FROM `admin` WHERE `username`=$nombreuser";
 			$result = mysqli_query($dbconfig,$query);
 			$row = mysqli_fetch_array($result);
 		}
