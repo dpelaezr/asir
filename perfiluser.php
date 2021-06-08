@@ -29,7 +29,7 @@ $user=  $_SESSION['user_login'];
 <div class="col-sm-6">
     <h3 class="profile">Foto de Perfil</h3>
     <a href="img/<?php echo $row['img']; ?>">
-      <img class="imgs-thumbnail" id="img" src="img/<?php echo $row['img']; ?>" width="150px">
+      <img class="imgs-thumbnail" id="img" src="img/<?php echo $row['img']; ?>" width="100px">
     </a>
 
     <?php 
@@ -72,7 +72,7 @@ $user=  $_SESSION['user_login'];
         <td><?php echo ucwords($row['estado']); ?></td>
       </tr>
     </table>
-    <a class="botonperfil" href="index.php?page=editaruser&username=<?php echo base64_encode($row['username']); ?>">Editar</a>
+    <a class="botonperfil" href="index.php?page=editaruser&id=<?php echo base64_encode($row['id']); ?>">Editar</a>
   </div>
 
 </div>
@@ -82,6 +82,10 @@ $user=  $_SESSION['user_login'];
 <div class="row">
   <div class="col-sm-6">
     <table class="table table-bordered">
+    <tr>
+        <td class="infperf">Id</td>
+        <td><?php echo ucwords($row['id']); ?></td>
+      </tr>
     <tr>
         <td class="infperf">Username</td>
         <td><?php echo ucwords($row['username']); ?></td>
@@ -103,7 +107,7 @@ $user=  $_SESSION['user_login'];
         <td><?php echo ucwords($row['estado']); ?></td>
       </tr>
     </table>
-    <a class="botonperfil" href="index.php?page=editaruser&username=<?php echo base64_encode($row['username']); ?>">Editar</a>
+    <a class="botonperfil" href="index.php?page=editaruser&id=<?php echo base64_encode($row['id']); ?>">Editar</a>
   </div>
 
   <div class="col-sm-6">

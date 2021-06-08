@@ -81,7 +81,7 @@ if (isset($_POST['añadir'])) {
 	  	<div class="form-group">
 		    <label for="aciclo">Año de Ciclo Cursado</label>
 		    <select name="aciclo" class="form-control" id="aciclo" required="">
-		    	<option>Selecciona el año</option>
+		    	<option class="seleccion">Selecciona el año</option>
 		    	<option value="1">1</option>
 		    	<option value="1">2</option>
 		    </select>

@@ -15,3 +15,14 @@ if (isset($_SESSION['user_login'])) {
 	    header('Location: login.php');
  }
  ?>
+
+<h1 class="principal"><i class="fas fa-book-reader"></i>  Alumnos</h1>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+     <li class="breadcrumb-item" aria-current="page"><a href="index.php"><span class="inf">Información</span> </a></li>
+     <li class="breadcrumb-item active" aria-current="page"><a href="alumnos.php"><span class="inf2">Lista de Alumnos</span></li>
+  </ol>
+</nav>
+<br>
+
+<h1 class="eliminar">Alumno/a Eliminado!</h1>

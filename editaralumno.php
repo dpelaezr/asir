@@ -73,7 +73,6 @@
           <div class="form-group">
 		    <label for="aciclo">Año del Ciclo</label>
 		    <select name="aciclo" class="form-control" id="aciclo" required="" value="">
-		    	<option>Select</option>
 		    	<option value="1" <?= $row['aciclo']=='1'? 'selected':'' ?>>1</option>
 		    	<option value="2" <?= $row['aciclo']=='2'? 'selected':'' ?>>2</option>
 		    </select>
@@ -94,8 +93,9 @@
 		    <label for="img">Foto</label>
 		    <input name="img" type="file" class="form-control" id="img">
 	  	</div>
+		  <br>
 	  	<div class="form-group text-center">
-		    <input name="update" value="Actualizar" type="submit" class="btn btn-danger">
+		    <input name="update" value="Actualizar" type="submit" class="boton2">
 	  	</div>
 	 </form>
 </div>

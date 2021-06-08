@@ -45,10 +45,6 @@
 <div class="row">
 <div class="col-sm-6">
 	<form enctype="multipart/form-data" method="POST" action="">
-    <div class="form-group">
-		    <label for="id">Id de la Asignatura</label>
-		    <input name="id" type="text" class="form-control" id="id" value="<?php echo $row['id']; ?>" required="">
-	  	</div>
 		<div class="form-group">
 		    <label for="nombre_asig">Nombre de la Asignatura</label>
 		    <input name="nombre_asig" type="text" class="form-control" id="nombre_asig" value="<?php echo $row['nombre_asig']; ?>" required="">
@@ -60,7 +56,6 @@
 	  	<div class="form-group">
 		    <label for="aciclo">Año del Ciclo</label>
 		    <select name="aciclo" class="form-control" id="aciclo" required="" value="">
-		    	<option>Selecciona el año</option>
 		    	<option value="1" <?= $row['aciclo']=='1'? 'selected':'' ?>>1</option>
 		    	<option value="2" <?= $row['aciclo']=='2'? 'selected':'' ?>>2</option>
 		    </select>

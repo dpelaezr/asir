@@ -184,6 +184,12 @@
         font-size: 4.3vw;
         font-family: Asap, Handlee, M PLUS Rounded;
     }
+
+    .eliminar {
+        font-size: 5vw;
+        font-family: Roboto Mono;
+        color: rgb(7, 4, 4);
+    }
 }
 
 @media (min-width: 771px) {
@@ -221,34 +227,72 @@
     font-size: 17px;
     font-family: Asap, Handlee, M PLUS Rounded;
     }
+
+    .eliminar {
+        font-size: 18px;
+        font-family: Roboto Mono;
+        color: rgb(7, 4, 4);
+    }
 }
 
 
 /* añadir.php */
 
+@media (min-width: 0px) and (max-width: 770px){
+    label {
+        font-size: 3.8vw;
+        font-family: Merriweather;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    .form-control {
+        font-size: 3vw;
+        font-family: Merriweather;
+    }
 
-label {
-    font-size: 15px;
-    font-family: Merriweather;
-    font-weight: bold;
-    padding: 10px;
+    option {
+        font-size: 4vw;
+    }
+    
+    .boton {
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    .boton2 {
+        background-color: rgb(163, 206, 196);
+        border-radius: 10px;
+        font-family: Roboto Mono;
+        font-size: 4vw;
+    }
 }
 
-.form-control {
-    font-size: 14px;
-    font-family: Merriweather;
+@media (min-width: 771px) {
+    label {
+        font-size: 15px;
+        font-family: Merriweather;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    .form-control {
+        font-size: 14px;
+        font-family: Merriweather;
+    }
+    
+    .boton {
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    .boton2 {
+        background-color: rgb(163, 206, 196);
+        border-radius: 10px;
+        font-family: Roboto Mono;
+    }
 }
 
-.boton {
-    text-align: center;
-    padding-top: 15px;
-}
-
-.boton2 {
-    background-color: rgb(163, 206, 196);
-    border-radius: 10px;
-    font-family: Roboto Mono;
-}
 
 /* perfiluser.php */
 
@@ -260,6 +304,10 @@ label {
     .perfiladmin{
         display: flex;
         text-align: center;
+    }
+
+    .imgs-thumbnail {
+        width: 120px;
     }
 
     .principal {
@@ -297,7 +345,7 @@ label {
     }
     
     .botonfoto {
-        width: 150px;
+        width: 120px;
         height: 40px;
         background-color: rgb(163, 206, 196);
         border-radius: 10px;

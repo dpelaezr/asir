@@ -53,11 +53,11 @@
           <td>'.$result['dni_prof'].'</td>
           <td>'.$result['aciclo'].'</td>
           <td>
-            <a class="btn btn-xs" href="index.php?page=editarasig&id='.base64_encode($result['id']).'&photo=">
+            <a class="btn btn-xs" href="index.php?page=editarasig&id='.base64_encode($result['id']).'">
               <i class="fa fa-edit"></i></a>
 
-             &nbsp; <a class="btn btn-xs" "href="index.php?page=eliminarasig&id='.base64_encode($result['id']).'&img=">
-             <i class="fa fa-trash-alt"></i></a></td>';
+              &nbsp; <a class="btn btn-xs" " href="index.php?page=eliminarasig&id='.base64_encode($result['id']).'">
+              <i class="fa fa-trash-alt"></i></a></td>';
         ?>
     </tr>
 

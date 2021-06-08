@@ -1,34 +1,92 @@
-.container{
-    padding-top: 60px;
+@media (min-width: 0px) and (max-width: 770px){
+    .container{
+        padding-top: 60px;
+    }
+    
+    .caja{
+        text-align: center;
+        border: 2px solid black;
+        width: 280px;
+        height: 290px;
+        padding-top: 10px;
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+    }
+    
+    .col-sm-12 {
+        font-size: 2vw;
+    }
+
+    img {
+        width: 90px;
+    }
+
+    h1{
+        font-family: Rubik;
+        font-size: 5.3vw;
+    }
+    
+    .form-group{
+        padding: 0.5em;
+    }
+    
+    input {
+        text-align: center;
+        width: 150px;
+        font-size: 4vw;
+    }
+    
+    .btn{
+        width: 80px;
+        height: 25px;
+        border: none;
+        font-family: Rubik;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background-color: #b1b1db;
+        font-size: 3.7vw;
+    }
 }
-.caja{
-    text-align: center;
-    border: 2px solid black;
-    width: 500px;
-    height: 450px;
-    padding-top: 10px;
-    display: flex;
-    flex-flow: column;
-    margin: auto;
-}
-h1{
-    font-family: Rubik;
-}
-.form-group{
-    padding: 0.9em;
-}
-input {
-    text-align: center;
-    width: 200px;
-    font-size: 15px;
-}
-.btn{
-    width: 120px;
-    height: 30px;
-    border: none;
-    font-family: Rubik;
-    font-weight: bold;
-    letter-spacing: 1px;
-    background-color: #b1b1db;
-    font-size: 15px;
+
+@media (min-width: 771px){
+    .container{
+        padding-top: 60px;
+    }
+    
+    .caja{
+        text-align: center;
+        border: 2px solid black;
+        width: 500px;
+        height: 450px;
+        padding-top: 10px;
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+    }
+    
+    h1{
+        font-family: Rubik;
+    }
+    
+    .form-group{
+        padding: 0.9em;
+    }
+    
+    input {
+        text-align: center;
+        width: 200px;
+        font-size: 15px;
+    }
+    
+    .btn{
+        width: 120px;
+        height: 30px;
+        border: none;
+        font-family: Rubik;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background-color: #b1b1db;
+        font-size: 15px;
+    }
 }

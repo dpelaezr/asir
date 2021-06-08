@@ -17,15 +17,22 @@
   </ol>
 </nav>
 
+<?php if(isset($_GET['delete']) || isset($_GET['edit'])) {
+    ?>
+
+<?php } ?>
+
 <div class="table-responsive">
   <table class="table">
   <tr>
-      <th scope="col">#</th>
+      <th scope="col">Id</th>
       <th scope="col">Nombre de Usuario</th>
       <th scope="col">Email</th>
       <th scope="col">Nombre</th>
       <th scope="col">Apellidos</th>
+      <th scope="col">Foto</th>
       <th scope="col">Estado</th>
+      <th scope="col">Opciones</th>
 
       <?php 
       $query=mysqli_query($dbconfig,'SELECT * FROM `admin` ORDER BY `admin`.`username`;');
@@ -40,8 +47,15 @@
           <td>'.$result['email'].'</td>
           <td>'.$result['nombre'].'</td>
 	        <td>'.$result['apellidos'].'</td>
+          <td><img src="img/'.$result['img'].'" height="50px"></td>
           <td>'.$result['estado'].'</td>
-          </td>';
+          <td>
+            <a class="btn btn-xs" href="index.php?page=editaradmin&id='.base64_encode($result['id']).'&img='.base64_encode($result['img']).'">
+              <i class="fa fa-edit"></i></a>
+            
+            &nbsp; <a class="btn btn-xs" " href="index.php?page=eliminaradmin&id='.base64_encode($result['id']).'&img='.base64_encode($result['img']).'">
+              <i class="fa fa-trash-alt"></i></a></td>';
+          
         ?>
     </tr>
 
@@ -86,3 +100,5 @@
  </tbody>
 </table>
 </div>
+
+<a class="botonperfil" href="index.php?page=añadiradmin&id"><i class="fa fa-plus"></i> Añadir Administrador</a>

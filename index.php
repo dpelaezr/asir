@@ -70,7 +70,7 @@ if (!isset($_SESSION['user_login'])) {
 
         <a href="index.php?page=usuarios" class="list-group-item list-group-item-action">
     <i class="fas fa-user-cog"></i> <span>Administradores</span></a>
-              
+
 	     <a href="index.php?page=perfiluser" class="list-group-item list-group-item-action">
 		<i class="fas fa-user"></i> <span>Perfil</span></a>
 
