@@ -147,37 +147,85 @@
 
 /* alumnos.php */
 
-.principal{
+@media (min-width: 0px) and (max-width: 770px){
+    .tabla {
+        display: none;
+    }
+
+    .principal{
+        font-size: 7vw;
+        font-family: Gayathri;
+        font-weight: bold;
+    }
+    
+    .inf {
+        color: black;
+        font-size: 4vw;
+        font-family: Roboto Mono;
+    }
+    
+    .inf2 {
+        color: rgb(117, 117, 117);
+        font-size: 3.8vw;
+        font-family: Roboto Mono;
+    }
+
+    .table {
+        background-color: rgb(244, 255, 235);
+        text-align: center;
+    }
+    
+    th {
+        font-size: 4.5vw;
+        font-family: Asap, Handlee, M PLUS Rounded;
+    }
+    
+    td {
+        font-size: 4.3vw;
+        font-family: Asap, Handlee, M PLUS Rounded;
+    }
+}
+
+@media (min-width: 771px) {
+    .tabla{
+    display: none;
+    }
+
+    .principal{
     font-size: 30px;
     font-family: Gayathri;
     font-weight: bold;
-}
+    }
 
-.inf {
+    .inf {
     color: black;
     font-family: Roboto Mono;
-}
+    }
 
-.inf2 {
+    .inf2 {
     color: rgb(117, 117, 117);
     font-family: Roboto Mono;
-}
+    }
 
-.table {
+    .table {
     background-color: rgb(244, 255, 235);
-}
+    text-align: center;
+    }
 
-th {
+    th {
     font-size: 17px;
     font-family: Asap, Handlee, M PLUS Rounded;
-}
+    }
 
-td {
+    td {
     font-size: 17px;
     font-family: Asap, Handlee, M PLUS Rounded;
+    }
 }
+
 
 /* añadir.php */
+
 
 label {
     font-size: 15px;
@@ -204,40 +252,101 @@ label {
 
 /* perfiluser.php */
 
-.botonperfil {
-    background-color: rgb(163, 206, 196);
-    font-family: Roboto Mono;
-    color: black;
-    padding: 8px;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 10px;
+@media (min-width: 0px) and (max-width: 770px){
+    .perfildesktop {
+        display: none;
+    }
+
+    .perfiladmin{
+        display: flex;
+        text-align: center;
+    }
+
+    .principal {
+        font-size: 6vw;
+    }
+
+    .botonperfil {
+        background-color: rgb(163, 206, 196);
+        font-family: Roboto Mono;
+        color: black;
+        padding: 8px;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 3.7vw;
+    }
+    
+    .infperf{
+        font-weight: bold;
+    }
+    
+    .profile{
+        font-size: 4vw;
+        font-weight: bold;
+        font-family: Roboto Mono;
+    }
+    
+    input {
+        padding: 10px;
+    }
+    
+    .photo {
+        font-size: 3.7vw;
+        font-family: Asap, Handlee, M PLUS Rounded;
+    }
+    
+    .botonfoto {
+        width: 150px;
+        height: 40px;
+        background-color: rgb(163, 206, 196);
+        border-radius: 10px;
+        font-size: 3.5vw;
+        font-family: Roboto Mono;
+    }
 }
 
-.infperf{
-    font-weight: bold;
+@media (min-width: 771px) {
+    .perfiladmin{
+        display: none;
+    }
+
+    .botonperfil {
+        background-color: rgb(163, 206, 196);
+        font-family: Roboto Mono;
+        color: black;
+        padding: 8px;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    
+    .infperf{
+        font-weight: bold;
+    }
+    
+    .profile{
+        font-size: 21px;
+        font-weight: bold;
+        font-family: Roboto Mono;
+    }
+    
+    input {
+        padding: 10px;
+    }
+    
+    .photo {
+        font-size: 15px;
+        font-family: Asap, Handlee, M PLUS Rounded;
+    }
+    
+    .botonfoto {
+        width: 150px;
+        height: 40px;
+        background-color: rgb(163, 206, 196);
+        border-radius: 10px;
+        font-size: 14px;
+        font-family: Roboto Mono;
+    }
 }
 
-.profile{
-    font-size: 21px;
-    font-weight: bold;
-    font-family: Roboto Mono;
-}
-
-input {
-    padding: 10px;
-}
-
-.photo {
-    font-size: 15px;
-    font-family: Asap, Handlee, M PLUS Rounded;
-}
-
-.botonfoto {
-    width: 150px;
-    height: 40px;
-    background-color: rgb(163, 206, 196);
-    border-radius: 10px;
-    font-size: 14px;
-    font-family: Roboto Mono;
-}

@@ -65,8 +65,9 @@
 		    	<option value="2" <?= $row['aciclo']=='2'? 'selected':'' ?>>2</option>
 		    </select>
 	  	</div>
+		  <br>
 	  	<div class="form-group text-center">
-		    <input name="update" value="Actualizar" type="submit" class="btn btn-danger">
+		    <input name="update" value="Actualizar" type="submit" class="boton2">
 	  	</div>
 	 </form>
 </div>

@@ -101,6 +101,7 @@ if (!isset($_SESSION['user_login'])) {
     
     <div class="clearfix"></div>
     <footer>
+    <br>
       <div class="container">
       <p class="letras">Copyright &copy; <?php echo date('Y') ?></p>
       </div>

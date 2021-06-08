@@ -90,8 +90,9 @@
 		    <label for="img">Foto</label>
 		    <input name="img" type="file" class="form-control" id="img">
 	  	</div>
+		  <br>
 	  	<div class="form-group text-center">
-		    <input name="update" value="Actualizar" type="submit" class="btn btn-danger">
+		    <input name="update" value="Actualizar" type="submit" class="boton2">
 	  	</div>
 	 </form>
 </div>

@@ -8,6 +8,7 @@
         }
     }
 ?>
+
 <h1 class="principal"><i class="fas fa-book-reader"></i>  Asignaturas</h1>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
@@ -29,6 +30,42 @@
   </div>
 
 <?php } ?>
+
+<div class="table-responsive">
+  <table class="table">
+  <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre de la Asignatura</th>
+      <th scope="col">DNI del Profesor</th>
+      <th scope="col">Año del Ciclo</th>
+      <th scope="col">Opciones</th>
+
+      <?php 
+      $query=mysqli_query($dbconfig,'SELECT * FROM `asignaturas` ORDER BY `asignaturas`.`id`;');
+      $i=1;
+      while ($result = mysqli_fetch_array($query)) { 
+    ?>
+      <tr>
+
+        <?php 
+        echo '<td>'.$i.'</td>
+          <td>'.ucwords($result['nombre_asig']).'</td>
+          <td>'.$result['dni_prof'].'</td>
+          <td>'.$result['aciclo'].'</td>
+          <td>
+            <a class="btn btn-xs" href="index.php?page=editarasig&id='.base64_encode($result['id']).'&photo=">
+              <i class="fa fa-edit"></i></a>
+
+             &nbsp; <a class="btn btn-xs" "href="index.php?page=eliminarasig&id='.base64_encode($result['id']).'&img=">
+             <i class="fa fa-trash-alt"></i></a></td>';
+        ?>
+    </tr>
+
+    <?php $i++;} ?>
+  </table>
+</div>
+
+<div class="tabla">
 <table class="table  table-striped table-hover table-bordered" id="data">
   <thead class="thead-dark">
     <tr>
@@ -65,3 +102,4 @@
      <?php $i++;} ?>
  </tbody>
 </table>
+</div>
