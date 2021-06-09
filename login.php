@@ -61,6 +61,7 @@
           <h1 class="text-center">Acceso al Sistema <br>de Información "Ralts"</h1>
           <div class="d-flex justify-content-center">
           <img src="./fondo/ralts.png" alt="">
+          <br>
           	<?php if(isset($nick)){ ?> <div role="alert" aria-live="assertive" aria-atomic="true" align="center" 
               class="toast alert alert-danger fade hide" data-delay="2000"><?php echo $nick; ?></div><?php };?>
           		

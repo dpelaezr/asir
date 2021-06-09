@@ -6,8 +6,8 @@
     .caja{
         text-align: center;
         border: 2px solid black;
-        width: 280px;
-        height: 350px;
+        width: 300px;
+        height: 360px;
         padding-top: 10px;
         display: flex;
         flex-flow: column;
@@ -51,6 +51,7 @@
         letter-spacing: 1px;
         background-color: #b1b1db;
         font-size: 3.7vw;
+        border-radius: 3px;
     }
 
     .alert{
@@ -104,6 +105,7 @@
         letter-spacing: 1px;
         background-color: #b1b1db;
         font-size: 15px;
+        border-radius: 3px;
     }
 
     .alert{
