@@ -34,7 +34,7 @@
   		$datainsert['insertsucess'] = '<p></p>';
 		if (!empty($_FILES['img']['name'])) {
 			move_uploaded_file($_FILES['img']['tmp_name'], 'img/'.$img);
-			unlink('img/'.$oldimg);
+			/* unlink('img/'.$oldimg); */
 		}	
   		/* header('Location: index.php?page=profesores&edit=success'); */
   	}else{

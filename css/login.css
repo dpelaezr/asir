@@ -7,7 +7,7 @@
         text-align: center;
         border: 2px solid black;
         width: 280px;
-        height: 290px;
+        height: 310px;
         padding-top: 10px;
         display: flex;
         flex-flow: column;
@@ -38,14 +38,20 @@
     }
     
     .btn{
-        width: 80px;
-        height: 25px;
+        width: 75px;
+        height: 20px;
         border: none;
         font-family: Rubik;
         font-weight: bold;
         letter-spacing: 1px;
         background-color: #b1b1db;
         font-size: 3.7vw;
+    }
+
+    .alert{
+        color: rgb(0, 0, 7);
+        font-family: Rubik;
+        font-size: 3.8vw;
     }
 }
 
@@ -58,7 +64,7 @@
         text-align: center;
         border: 2px solid black;
         width: 500px;
-        height: 450px;
+        height: 480px;
         padding-top: 10px;
         display: flex;
         flex-flow: column;
@@ -88,5 +94,10 @@
         letter-spacing: 1px;
         background-color: #b1b1db;
         font-size: 15px;
+    }
+
+    .alert{
+        color: rgb(0, 0, 7);
+        font-family: Rubik;
     }
 }

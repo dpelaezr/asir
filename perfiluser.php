@@ -34,7 +34,7 @@ $user=  $_SESSION['user_login'];
 
     <?php 
         if (isset($_POST['actualizar'])) {
-          unlink('img/'.$row['img']);
+         /* unlink('img/'.$row['img']); */
           $archivofoto = $_FILES['fotoperfil']['tmp_name'];
           $actualizar = $user.date('s-m-y-m-Y').$_FILES['fotoperfil']['name'];
           if (mysqli_query($dbconfig, "UPDATE `admin` SET `img` = '$actualizar' WHERE `admin`.`username` = '$user';")) {
@@ -118,7 +118,7 @@ $user=  $_SESSION['user_login'];
 
     <?php 
         if (isset($_POST['actualizar'])) {
-          unlink('img/'.$row['img']);
+         /*  unlink('img/'.$row['img']); */
           $archivofoto = $_FILES['fotoperfil']['tmp_name'];
           $actualizar = $user.date('s-m-y-m-Y').$_FILES['fotoperfil']['name'];
           if (mysqli_query($dbconfig, "UPDATE `admin` SET `img` = '$actualizar' WHERE `admin`.`username` = '$user';")) {

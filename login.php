@@ -28,10 +28,10 @@
                     $_SESSION['user_login']=$username;
                     header('Location: index.php');
               }else {
-                  $status_inactive = "Tu estado es inactivo, ponte en contacto con el Administrador";
+                  $status_inactive = "Tu cuenta se encuentra inactiva, ponte en contacto con el Administrador.";
               }
               }else{
-                $wrongpass="La contraseña es erronea!";
+                $wrongpass="La contraseña es incorrecta!";
               }
             }else {
               $nick = "Usuario incorrecto!";
