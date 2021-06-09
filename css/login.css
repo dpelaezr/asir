@@ -7,7 +7,7 @@
         text-align: center;
         border: 2px solid black;
         width: 300px;
-        height: 360px;
+        height: 380px;
         padding-top: 10px;
         display: flex;
         flex-flow: column;
@@ -43,8 +43,8 @@
     }
 
     .btn{
-        width: 75px;
-        height: 20px;
+        width: 80px;
+        height: 30px;
         border: none;
         font-family: Rubik;
         font-weight: bold;

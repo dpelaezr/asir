@@ -346,7 +346,7 @@
     }
     
     .botonfoto {
-        width: 120px;
+        width: 130px;
         height: 40px;
         background-color: rgb(163, 206, 196);
         border-radius: 10px;
@@ -398,4 +398,3 @@
         font-family: Roboto Mono;
     }
 }
-

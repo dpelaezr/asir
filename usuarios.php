@@ -100,5 +100,5 @@
  </tbody>
 </table>
 </div>
-
+<br>
 <a class="botonperfil" href="index.php?page=añadiradmin&id"><i class="fa fa-plus"></i> Añadir Administrador</a>
