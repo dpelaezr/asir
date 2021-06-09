@@ -29,6 +29,7 @@ if (isset($_POST['añadir'])) {
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
      <li class="breadcrumb-item" aria-current="page"><a href="index.php"><span class="inf">Información</span> </a></li>
+	 <li class="breadcrumb-item" aria-current="page"><a href="index.php?page=asignaturas"><span class="inf">Asignaturas</span> </a></li>
      <li class="breadcrumb-item active" aria-current="page"><span class="inf2">Añadir Asignatura</span></li>
   </ol>
 </nav>
