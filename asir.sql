@@ -3,12 +3,10 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 09-06-2021 a las 07:18:49
+-- Tiempo de generación: 09-06-2021 a las 08:13:30
 -- Versión del servidor: 5.7.24
 -- Versión de PHP: 7.4.1
 
-CREATE database asir;
-USER asir;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -47,10 +45,10 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `email`, `nombre`, `apellidos`, `img`, `estado`, `created_at`, `updated_at`) VALUES
-(1, 'alberto', 'admin', 'alberto@gmail.com', 'Alberto', 'Sanchez', 'alberto42-06-21-06-2021admin.7.png', 'activo', NULL, NULL),
-(2, 'alex', 'admin', 'alex@gmail.com', 'Alex', 'Bueno', 'alex55-06-21-06-2021admin4.png', 'inactivo', NULL, NULL),
-(3, 'olivia', 'admin', 'olivia@gmail.com', 'Olivia', 'Iglesias', 'olivia02-06-21-06-2021admin6.png', 'activo', NULL, NULL),
-(4, 'morgado', 'admin', 'morgado@gmail.com', 'Jose', 'Morgado', 'morgado34-06-21-06-2021admin1.png', 'activo', NULL, NULL);
+(1, 'alberto', 'admin', 'alberto@gmail.com', 'Alberto', 'Sanchez', 'alberto46-06-21-06-2021admin.7.png', 'inactivo', NULL, NULL),
+(2, 'alex', 'admin', 'alex@gmail.com', 'Alex', 'Bueno', 'alex05-06-21-06-2021admin4.png', 'activo', NULL, NULL),
+(3, 'olivia', 'admin', 'olivia@gmail.com', 'Olivia', 'Iglesias', 'olivia19-06-21-06-2021admin6.png', 'inactivo', NULL, NULL),
+(4, 'morgado', 'admin', 'morgado@gmail.com', 'Jose', 'Morgado', 'morgado35-06-21-06-2021admin8.png', 'activo', NULL, NULL);
 
 -- --------------------------------------------------------
 

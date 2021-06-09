@@ -78,7 +78,7 @@
 				  <div class="form-group row">
 				    <div class="col-sm-12">
 				      <input type="text" class="form-control" name="username" value="<?= isset($nick2)? $nick2: ''; ?>" 
-                      placeholder="Nombre de ususario" id="inputEmail3"> <?php echo isset($input_arr['input_user_error'])?
+                      placeholder="Nombre de usuario" id="inputEmail3"> <?php echo isset($input_arr['input_user_error'])?
                        '<label>'.$input_arr['input_user_error'].'</label>':''; ?>
 				    </div>
 				  </div>
