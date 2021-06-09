@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 09-06-2021 a las 08:13:30
+-- Tiempo de generación: 09-06-2021 a las 09:57:42
 -- Versión del servidor: 5.7.24
 -- Versión de PHP: 7.4.1
 
@@ -45,10 +45,11 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `email`, `nombre`, `apellidos`, `img`, `estado`, `created_at`, `updated_at`) VALUES
-(1, 'alberto', 'admin', 'alberto@gmail.com', 'Alberto', 'Sanchez', 'alberto46-06-21-06-2021admin.7.png', 'inactivo', NULL, NULL),
-(2, 'alex', 'admin', 'alex@gmail.com', 'Alex', 'Bueno', 'alex05-06-21-06-2021admin4.png', 'activo', NULL, NULL),
-(3, 'olivia', 'admin', 'olivia@gmail.com', 'Olivia', 'Iglesias', 'olivia19-06-21-06-2021admin6.png', 'inactivo', NULL, NULL),
-(4, 'morgado', 'admin', 'morgado@gmail.com', 'Jose', 'Morgado', 'morgado35-06-21-06-2021admin8.png', 'activo', NULL, NULL);
+(1, 'alex', 'admin', 'alex@gmail.com', 'Alex', 'Bueno', 'alex05-06-21-06-2021admin4.png', 'activo', NULL, NULL),
+(2, 'olivia', 'admin', 'olivia@gmail.com', 'Olivia', 'Iglesias', 'olivia19-06-21-06-2021admin6.png', 'inactivo', NULL, NULL),
+(3, 'morgado', 'admin', 'morgado@gmail.com', 'Jose', 'Morgado', 'morgado35-06-21-06-2021admin8.png', 'activo', NULL, NULL),
+(4, 'luisa', 'admin', 'luisa@gmail.com', 'Luisa', 'Parra', 'luisa28-06-21-06-2021admin1.png', 'activo', NULL, NULL),
+(5, 'gines', 'admin', 'gines@gmail.com', 'Gines', 'Esteban', 'gines08-06-21-06-2021admin.7.png', 'activo', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -169,7 +170,7 @@ ALTER TABLE `profesores`
 -- AUTO_INCREMENT de la tabla `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `asignaturas`
