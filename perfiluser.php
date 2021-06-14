@@ -53,7 +53,7 @@ $user=  $_SESSION['user_login'];
     <table class="table table-bordered">
     <tr>
         <td class="infperf">Username</td>
-        <td><?php echo ucwords($row['username']); ?></td>
+        <td><?php echo $row['username']; ?></td>
       </tr>
       <tr>
         <td class="infperf">Email</td>
@@ -82,10 +82,6 @@ $user=  $_SESSION['user_login'];
 <div class="row">
   <div class="col-sm-6">
     <table class="table table-bordered">
-    <tr>
-        <td class="infperf">Id</td>
-        <td><?php echo $row['id']; ?></td>
-      </tr>
     <tr>
         <td class="infperf">Username</td>
         <td><?php echo $row['username']; ?></td>
