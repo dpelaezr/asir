@@ -48,10 +48,10 @@
         echo '<td>'.$i.'</td>
           <td>'.ucwords($result['dni']).'</td>
           <td>'.ucwords($result['nombre']).'</td>
-          <td>'.$result['apellidos'].'</td>
-          <td>'.ucwords($result['aciclo']).'</td>
-          <td>'.$result['ciudad'].'</td>
-          <td>'.ucwords($result['telefono']).'</td>
+          <td>'.ucwords($result['apellidos']).'</td>
+          <td>'.$result['aciclo'].'</td>
+          <td>'.ucwords($result['ciudad']).'</td>
+          <td>'.$result['telefono'].'</td>
           <td>'.$result['email'].'</td>
           <td><img src="img/'.$result['img'].'" height="50px"></td>
           <td>
@@ -96,10 +96,10 @@
         echo '<td>'.$i.'</td>
           <td>'.ucwords($result['dni']).'</td>
           <td>'.ucwords($result['nombre']).'</td>
-          <td>'.$result['apellidos'].'</td>
-          <td>'.ucwords($result['aciclo']).'</td>
-          <td>'.$result['ciudad'].'</td>
-          <td>'.ucwords($result['telefono']).'</td>
+          <td>'.ucwords($result['apellidos']).'</td>
+          <td>'.$result['aciclo'].'</td>
+          <td>'.ucwords($result['ciudad']).'</td>
+          <td>'.$result['telefono'].'</td>
           <td>'.$result['email'].'</td>
           <td><img src="img/'.$result['img'].'" height="50px"></td>
           <td>

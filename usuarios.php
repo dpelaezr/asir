@@ -43,10 +43,10 @@
 
         <?php 
         echo '<td>'.$i.'</td>
-          <td>'.ucwords($result['username']).'</td>
+          <td>'.$result['username'].'</td>
           <td>'.$result['email'].'</td>
-          <td>'.$result['nombre'].'</td>
-	        <td>'.$result['apellidos'].'</td>
+          <td>'.ucwords($result['nombre']).'</td>
+	        <td>'.ucwords($result['apellidos']).'</td>
           <td><img src="img/'.$result['img'].'" height="50px"></td>
           <td>'.$result['estado'].'</td>
           <td>
@@ -86,10 +86,10 @@
 
         <?php 
         echo '<td>'.$i.'</td>
-          <td>'.ucwords($result['username']).'</td>
+          <td>'.$result['username'].'</td>
           <td>'.$result['email'].'</td>
-          <td>'.$result['nombre'].'</td>
-          <td>'.$result['apellidos'].'</td>
+          <td>'.ucwords($result['nombre']).'</td>
+          <td>'.ucwords($result['apellidos']).'</td>
           <td>'.$result['estado'].'</td>
           <td>
 	      </td>';
